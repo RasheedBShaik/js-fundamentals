@@ -79,3 +79,17 @@ console.log(firstLetterInStr);
 
 let lastLetterInStr = Str[Str.length - 1];
 console.log(lastLetterInStr);
+
+//    Array concepts
+
+let BigArray = [
+  ["array", 1, 0.5],
+  ["array", 2],
+];
+console.log(BigArray);
+
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+
+console.log(array1[0]);
+console.log(array1[0] + array2[2]);
