@@ -94,3 +94,7 @@ let array2 = [4, 5, 6];
 
 console.log(array1[0]);
 console.log(array1[0] + array2[2]);
+
+// change array value with their index
+array1[2] = 10;
+console.log(array1);
