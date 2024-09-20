@@ -67,3 +67,6 @@ console.log(Str);
  \b backspace
  \f form feed 
 */
+let Strlength = 0;
+Strlength = Str.length;
+console.log(Strlength);
