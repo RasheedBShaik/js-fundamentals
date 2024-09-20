@@ -81,13 +81,14 @@ let lastLetterInStr = Str[Str.length - 1];
 console.log(lastLetterInStr);
 
 //    Array concepts
-
+// giving multiple arrays indide one array
 let BigArray = [
   ["array", 1, 0.5],
   ["array", 2],
 ];
 console.log(BigArray);
 
+// adding array value with their indeces
 let array1 = [1, 2, 3];
 let array2 = [4, 5, 6];
 
