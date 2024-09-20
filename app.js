@@ -47,3 +47,23 @@ function greet(personName, PersonLastName) {
   console.log("hello, " + personName + " " + " and" + " " + PersonLastName);
 }
 greet("Rasheed", "Ahmad");
+let x = 12;
+x *= 2; //another way for multiplication
+console.log(x);
+x = 12;
+x /= 6; //another way for division
+console.log(x);
+
+let Str = 'I am a "double quoted" string inside the "double qoutes"'; //using of double quotes inside the String
+console.log(Str);
+/*
+    escape sequences in strings
+ \' single quote
+ \" double quote
+ \\ backslash
+ \n newline
+ \r carriage return
+ \t tab
+ \b backspace
+ \f form feed 
+*/
