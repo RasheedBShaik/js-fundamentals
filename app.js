@@ -54,7 +54,7 @@ x = 12;
 x /= 6; //another way for division
 console.log(x);
 
-let Str = 'I am a "double quoted" string inside the "double qoutes"'; //using of double quotes inside the String
+let Str = 'I am a "double quoted" string inside the double qoutes'; //using of double quotes inside the String
 console.log(Str);
 /*
     escape sequences in strings
@@ -67,6 +67,15 @@ console.log(Str);
  \b backspace
  \f form feed 
 */
+
+//    Minor Functions
+
 let Strlength = 0;
 Strlength = Str.length;
 console.log(Strlength);
+
+let firstLetterInStr = Str[0];
+console.log(firstLetterInStr);
+
+let lastLetterInStr = Str[Str.length - 1];
+console.log(lastLetterInStr);
