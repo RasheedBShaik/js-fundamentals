@@ -98,3 +98,16 @@ console.log(array1[0] + array2[2]);
 // change array value with their index
 array1[2] = 10;
 console.log(array1);
+
+// accessing multidimensional array with indeces
+
+let multidimensionalArray = [[1, 2, 3], 4, 5, [6, 7], 8, [9, 10]];
+
+console.log(multidimensionalArray[0][1]);
+console.log(multidimensionalArray[1]);
+console.log(multidimensionalArray[2]);
+console.log(multidimensionalArray[3]);
+console.log(multidimensionalArray[3][1]);
+console.log(multidimensionalArray[4]);
+console.log(multidimensionalArray[5]);
+console.log(multidimensionalArray[5][1]);
