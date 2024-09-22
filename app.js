@@ -223,3 +223,10 @@ function timesFive(tfvalue) {
   return tfvalue * 5;
 }
 console.log(timesFive(5));
+
+//understanding undefined value returned from a function
+let snum = 0;
+function addfive() {
+  snum += 5;
+}
+console.log(addfive());
