@@ -251,7 +251,7 @@ function trueOrFalse(itistrue) {
 console.log(trueOrFalse(true));
 
 // comparision with the equality operator
-
+console.log(" equal");
 function testequal(val) {
   if (val == 5) {
     return "equal";
@@ -259,3 +259,15 @@ function testequal(val) {
   return "not equal";
 }
 console.log(testequal(10));
+
+console.log("strict equal");
+// comparision with strict equal operator
+function testStrictEqual(val) {
+  if (val === 10) {
+    return "equal";
+  }
+  return "not equal";
+}
+console.log(testStrictEqual("10"));
+
+console.log(testStrictEqual(10));
