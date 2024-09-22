@@ -211,3 +211,15 @@ function myOutfit() {
 }
 console.log(OuterWear);
 console.log(myOutfit());
+
+// return  a value from a function with return
+//example 1
+function minusSeven(msvalue) {
+  return msvalue - 7;
+}
+console.log(minusSeven(10));
+//example 2
+function timesFive(tfvalue) {
+  return tfvalue * 5;
+}
+console.log(timesFive(5));
