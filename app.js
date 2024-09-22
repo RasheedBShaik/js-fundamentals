@@ -123,3 +123,12 @@ console.log(Array);
 //pop
 Array.pop();
 console.log(Array); //remove element at end
+
+//manipulate array with shift and unshift
+//shift
+Array.shift();
+console.log(Array); //remove element at brgin
+
+//unshift
+Array.unshift("hello"); //add elements at begin
+console.log(Array);
