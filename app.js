@@ -240,3 +240,12 @@ let inlinelist = [1, 2, 3, 4, 5];
 console.log("before: " + JSON.stringify(inlinelist));
 console.log(nextinline(inlinelist, 6));
 console.log("after: " + JSON.stringify(inlinelist));
+
+// if else conditional statements
+function trueOrFalse(itistrue) {
+  if (itistrue) {
+    return "yes,it is true";
+  }
+  return "no,it is false";
+}
+console.log(trueOrFalse(true));
