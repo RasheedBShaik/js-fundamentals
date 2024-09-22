@@ -249,3 +249,13 @@ function trueOrFalse(itistrue) {
   return "no,it is false";
 }
 console.log(trueOrFalse(true));
+
+// comparision with the equality operator
+
+function testequal(val) {
+  if (val == 5) {
+    return "equal";
+  }
+  return "not equal";
+}
+console.log(testequal(10));
