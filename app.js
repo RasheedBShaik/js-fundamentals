@@ -132,3 +132,29 @@ console.log(Array); //remove element at brgin
 //unshift
 Array.unshift("hello"); //add elements at begin
 console.log(Array);
+
+//shopping list
+
+let myShoppingList = [
+  ["idly,4"],
+  ["dosi,3"]["bonda,2"],
+  ["chapati,2"],
+  ["vada,4"],
+]; //example tiffin list
+
+//write a code in reusable functions
+
+function reusableFunction() {
+  console.log("reusable Function Content");
+}
+
+reusableFunction(); //functioncall of reusableFunction
+
+//passing values to function with arguments
+
+function sum(a, b) {
+  let addedValue = a + b;
+  console.log(addedValue);
+}
+sum(1, 2);
+sum(5, 5);
