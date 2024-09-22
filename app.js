@@ -153,8 +153,52 @@ reusableFunction(); //functioncall of reusableFunction
 //passing values to function with arguments
 
 function sum(a, b) {
-  let addedValue = a + b;
+  //function with arguments
+  addedValue = a + b;
   console.log(addedValue);
 }
 sum(1, 2);
 sum(5, 5);
+
+//    global and local scope
+
+// global scope and functions
+
+//we can use one function's variable value in another function with functioncall
+console.log("......global scope");
+let globalVariable = "value of global variable";
+function fun1() {
+  globalvar = 0;
+}
+function fun2() {
+  if (globalvar < 3) {
+    console.log("hii");
+    globalvar++;
+    console.log(globalvar);
+  }
+  if (globalvar < 3) {
+    console.log("hii");
+    globalvar++;
+    console.log(globalvar);
+  }
+  if (globalvar < 3) {
+    console.log("hii");
+    globalvar++;
+    console.log(globalvar);
+    console.log(globalVariable);
+  }
+}
+fun1();
+fun2();
+
+console.log("......local scope");
+
+//local scope and functions
+function fun3() {
+  localvaraible = "old value";
+  console.log(localvaraible);
+}
+fun3();
+localvaraible = "new value";
+console.log(localvaraible);
+fun3();
