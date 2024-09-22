@@ -111,3 +111,15 @@ console.log(multidimensionalArray[3][1]);
 console.log(multidimensionalArray[4]);
 console.log(multidimensionalArray[5]);
 console.log(multidimensionalArray[5][1]);
+
+//manipulate array with push and pop
+
+//push
+let Array = ["joy", "boy", "toy", [1, 2, 3], 11];
+console.log(Array);
+Array.push("hi", "roi"); //add elements at end
+console.log(Array);
+
+//pop
+Array.pop();
+console.log(Array); //remove element at end
