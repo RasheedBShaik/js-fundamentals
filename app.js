@@ -202,3 +202,12 @@ fun3();
 localvaraible = "new value";
 console.log(localvaraible);
 fun3();
+
+// globalscope VS localscope
+let OuterWear = "T-shirt";
+function myOutfit() {
+  OuterWear = "sweater";
+  return OuterWear;
+}
+console.log(OuterWear);
+console.log(myOutfit());
