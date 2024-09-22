@@ -230,3 +230,13 @@ function addfive() {
   snum += 5;
 }
 console.log(addfive());
+
+//stand in line
+function nextinline(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+let inlinelist = [1, 2, 3, 4, 5];
+console.log("before: " + JSON.stringify(inlinelist));
+console.log(nextinline(inlinelist, 6));
+console.log("after: " + JSON.stringify(inlinelist));
