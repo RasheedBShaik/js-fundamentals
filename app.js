@@ -282,3 +282,16 @@ function testequal(val) {
 }
 console.log(testequal(2));
 // like this we can use strict inequality operation also
+
+// Comparision with Greater than or equal operator
+
+function GreaterOrEqualto(val) {
+  if (val >= 20) {
+    return "20 or over";
+  }
+  if (val >= 10) {
+    return "10 or over";
+  }
+  return "less than 0";
+}
+console.log(GreaterOrEqualto(10));
