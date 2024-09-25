@@ -249,6 +249,17 @@ function trueOrFalse(itistrue) {
   return "no,it is false";
 }
 console.log(trueOrFalse(true));
+// else if statements
+function elseif(val) {
+  if (val < 5 && val > 0) {
+    return "between 0-5";
+  } else if (val < 10 && val > 20) {
+    return "between 10-20";
+  } else if (val < 0) {
+    return "negative value";
+  } else return "more than 20";
+}
+console.log(elseif(-4));
 // comparision with the equality operator
 
 function testequal(val) {
