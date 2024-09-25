@@ -251,14 +251,14 @@ function trueOrFalse(itistrue) {
 console.log(trueOrFalse(true));
 
 // comparision with the equality operator
-console.log(" equal");
+
 function testequal(val) {
   if (val == 5) {
     return "equal";
   }
   return "not equal";
 }
-console.log(testequal(10));
+console.log(testequal(5));
 
 console.log("strict equal");
 // comparision with strict equal operator
@@ -271,3 +271,14 @@ function testStrictEqual(val) {
 console.log(testStrictEqual("10"));
 
 console.log(testStrictEqual(10));
+// comparision with the inequality operator
+
+function testequal(val) {
+  if (val != 5) {
+    //(!=)=>inequallity operator
+    return "not equal";
+  }
+  return "equal";
+}
+console.log(testequal(2));
+// like this we can use strict inequality operation also
