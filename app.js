@@ -249,7 +249,6 @@ function trueOrFalse(itistrue) {
   return "no,it is false";
 }
 console.log(trueOrFalse(true));
-
 // comparision with the equality operator
 
 function testequal(val) {
@@ -321,5 +320,17 @@ function LogicalAnd(val) {
   if (val <= 30 && val >= 20) {
     return "between 21-30";
   }
+  return "more than 30";
 }
 console.log(LogicalAnd(21));
+
+//comparision with Logical or operator
+
+function LogicalOr(val) {
+  // given range is the value between 10 to 20 only
+  if (val < 10 || val > 20) {
+    return "Outside the given range";
+  }
+  return "inside the given range";
+}
+console.log(LogicalOr(10));
