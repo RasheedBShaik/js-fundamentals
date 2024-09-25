@@ -308,3 +308,18 @@ function LessThanOrEqualto(val) {
   return "more than 20";
 }
 console.log(LessThanOrEqualto(20));
+
+//comparision with Logical and operator
+
+function LogicalAnd(val) {
+  if (val <= 10 && val >= 0) {
+    return "between 0-10";
+  }
+  if (val <= 20 && val >= 10) {
+    return "between 11-20";
+  }
+  if (val <= 30 && val >= 20) {
+    return "between 21-30";
+  }
+}
+console.log(LogicalAnd(21));
