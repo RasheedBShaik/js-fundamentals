@@ -285,7 +285,7 @@ console.log(testequal(2));
 
 // Comparision with Greater than or equal operator
 
-function GreaterOrEqualto(val) {
+function GreaterThanOrEqualto(val) {
   if (val >= 20) {
     return "20 or over";
   }
@@ -294,4 +294,17 @@ function GreaterOrEqualto(val) {
   }
   return "less than 0";
 }
-console.log(GreaterOrEqualto(10));
+console.log(GreaterThanOrEqualto(10));
+
+// Comparision with Less than or equal operator
+
+function LessThanOrEqualto(val) {
+  if (val <= 10) {
+    return "10 or less";
+  }
+  if (val <= 20) {
+    return "20 or less";
+  }
+  return "more than 20";
+}
+console.log(LessThanOrEqualto(20));
