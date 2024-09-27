@@ -336,12 +336,30 @@ function LogicalAnd(val) {
 console.log(LogicalAnd(21));
 
 //comparision with Logical or operator
-
+// given range is the value between 10 to 20 only
 function LogicalOr(val) {
-  // given range is the value between 10 to 20 only
   if (val < 10 || val > 20) {
     return "Outside the given range";
   }
   return "inside the given range";
 }
 console.log(LogicalOr(10));
+// chaining if else statements
+function testsize(num) {
+  if (num < 5) {
+    return "tiny";
+  }
+  if (num < 10) {
+    return "small";
+  }
+  if (num < 15) {
+    return "medium";
+  }
+  if (num < 20) {
+    return "large";
+  }
+  if (num >= 20) {
+    return "huge";
+  }
+}
+console.log(testsize(18));
