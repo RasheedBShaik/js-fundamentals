@@ -592,3 +592,7 @@ console.log(myDetails["my name"]);
 // add new properties to object
 myDetails["laptop"] = "HP";
 console.log(myDetails.laptop);
+//delete properties to object
+console.log(myDetails.presentYear);
+delete myDetails.presentYear;
+console.log(myDetails.presentYear);
