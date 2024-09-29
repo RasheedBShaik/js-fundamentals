@@ -586,3 +586,6 @@ console.log(myDetails["my name"]);
 let country = myDetails[7];
 let myCountry = country;
 console.log(myCountry);
+// updating object properties
+myDetails["my name"] = "Shaik Rasheed Basha";
+console.log(myDetails["my name"]);
