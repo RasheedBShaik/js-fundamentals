@@ -449,3 +449,58 @@ function sequentialSizes(val) {
   return answer;
 }
 console.log(sequentialSizes(6));
+
+//replacing if else chains with switch
+//// before replacing
+function ifelseWeek(val) {
+  if (val === 1) {
+    day = "Sunday";
+  } else if (val === 2) {
+    day = "Monday";
+  } else if (val === 3) {
+    day = "Tuesday";
+  } else if (val === 4) {
+    day = "Wednesday";
+  } else if (val === 5) {
+    day = "Thursday";
+  } else if (val === 6) {
+    day = "Friday";
+  } else if (val === 7) {
+    day = "Saturday";
+  } else day = "enter 1-7 to find day";
+  return day;
+  // console.log(day);
+}
+console.log(ifelseWeek(6));
+
+///// after replacing
+function switchWeek(val) {
+  switch (val) {
+    case 1:
+      day = "Sunday";
+      break;
+    case 2:
+      day = "Monday";
+      break;
+    case 3:
+      day = "Tuesday";
+      break;
+    case 4:
+      day = "Wednesday";
+      break;
+    case 5:
+      day = "Thursday";
+      break;
+    case 6:
+      day = "Friday";
+      break;
+    case 7:
+      day = "Saturday";
+      break;
+    default:
+      day = "enter 1-7 to find day";
+      break;
+  }
+  return day;
+}
+console.log(switchWeek(2));
