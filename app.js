@@ -422,3 +422,30 @@ function caseInSwitch(val) {
  4 - delta
 */
 console.log(caseInSwitch(4));
+
+// multiple identical options in switch statements
+
+function sequentialSizes(val) {
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "low";
+      break;
+
+    case 4:
+    case 5:
+    case 6:
+      answer = "medium";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "high";
+      break;
+    default:
+      answer = "enter  value from 1 to 9 only";
+  }
+  return answer;
+}
+console.log(sequentialSizes(6));
