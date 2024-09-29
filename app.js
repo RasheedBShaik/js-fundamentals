@@ -565,3 +565,25 @@ cc(7);
 cc("K");
 cc("A");
 console.log(cc(4));
+
+//Build Javascript Objects
+
+let myDetails = {
+  "my name": "Rasheed Basha",
+  school: "Vasista",
+  inter: "Sri Chaithanya",
+  Btech: "Geethanjali",
+  presentYear: 2024,
+  age: 20,
+  7: "India",
+};
+//use dot(.) to access properties
+console.log(myDetails.age);
+//use bracket([]) to access properies
+// we use bracket notation for the property name have spaces
+console.log(myDetails["my name"]);
+
+// accessing Object properties with variables
+let country = myDetails[7];
+let myCountry = country;
+console.log(myCountry);
