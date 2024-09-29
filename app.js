@@ -589,3 +589,6 @@ console.log(myCountry);
 // updating object properties
 myDetails["my name"] = "Shaik Rasheed Basha";
 console.log(myDetails["my name"]);
+// add new properties to object
+myDetails["laptop"] = "HP";
+console.log(myDetails.laptop);
