@@ -504,3 +504,19 @@ function switchWeek(val) {
   return day;
 }
 console.log(switchWeek(2));
+
+// returning boolean values from functions
+// getting true or false by using if else complete code
+function islessex1(a, b) {
+  if (a < b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(islessex1(10, 15));
+// getting true or false without using if else statements
+function islessex2(a, b) {
+  return a < b;
+}
+console.log(islessex2(20, 15));
