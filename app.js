@@ -582,3 +582,7 @@ console.log(myDetails.age);
 //use bracket([]) to access object properies
 // we use bracket notation for the property name have spaces
 console.log(myDetails["my name"]);
+// accessing Object properties with variables
+let country = myDetails[7];
+let myCountry = country;
+console.log(myCountry);
