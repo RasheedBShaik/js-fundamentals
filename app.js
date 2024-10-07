@@ -625,3 +625,21 @@ function checkObj(checkProp) {
 }
 console.log(checkObj("hi"));
 console.log(checkObj("bro"));
+
+// accessing nested objects
+let outfit = {
+  shirt: {
+    inside: {
+      color: "blue",
+      size: "large",
+      type: "full hands",
+    },
+    outside: {
+      color: "black",
+      size: "medium",
+      type: "jeans",
+    },
+  },
+};
+let shirtType = outfit.shirt.inside["color"];
+console.log(shirtType);
