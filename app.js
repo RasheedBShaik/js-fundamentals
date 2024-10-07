@@ -609,3 +609,19 @@ function Lookup(val) {
   return result;
 }
 console.log(Lookup("me"));
+
+// testing objects for properties
+let myObj = {
+  me: "rasheed",
+  bro: "ahmad",
+  school: "vasista",
+};
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
+  } else {
+    return "not found";
+  }
+}
+console.log(checkObj("hi"));
+console.log(checkObj("bro"));
