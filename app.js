@@ -592,7 +592,20 @@ console.log(myDetails["my name"]);
 // add new properties to object
 myDetails["laptop"] = "HP";
 console.log(myDetails.laptop);
-//delete properties to object
+//delete properties from object
 console.log(myDetails.presentYear);
 delete myDetails.presentYear;
 console.log(myDetails.presentYear);
+// using objects for lookups
+
+function Lookup(val) {
+  var result = "";
+  let lookup = {
+    me: "rasheed",
+    bro: "ahmad",
+    school: "vasista",
+  };
+  result = lookup[val];
+  return result;
+}
+console.log(Lookup("me"));
