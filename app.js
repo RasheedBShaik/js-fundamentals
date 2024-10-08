@@ -658,3 +658,47 @@ let myPlants = [
 ];
 let bananaplant = myPlants[1].list[1];
 console.log(bananaplant);
+
+// record collection
+
+let moviesCollection = {
+  123: {
+    name: "devara",
+    hero: "jr.ntr",
+    actors: ["jahnvi kapoor", "srikanth", "saif ali khan"],
+  },
+  456: {
+    name: "salaar",
+    hero: "prabhas",
+  },
+  789: {
+    name: "KGF",
+    hero: "yash",
+    actors: ["srinidhi shetty", "sunjay dutt"],
+  },
+  101112: {
+    name: "pushpa",
+    hero: "allu arjun",
+    actors: ["rashmika", "sunil"],
+  },
+  131415: {
+    name: "iron man",
+  },
+};
+let collectionCopy = JSON.parse(JSON.stringify(moviesCollection));
+
+function updateRecords(id, prop, val) {
+  if (val === "") {
+    delete moviesCollection[id][prop];
+  } else if (prop === "") {
+    moviesCollection[id][prop] = collection[id][prop] || [];
+    collection[id][prop].push(val);
+  } else {
+    moviesCollection[id][prop] = val;
+  }
+
+  return moviesCollection;
+}
+console.log(collectionCopy); //before update
+updateRecords(131415, "hero", "robert downey jr");
+console.log(updateRecords(789, "heroine", "kaa")); //after update
