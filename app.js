@@ -643,3 +643,18 @@ let outfit = {
 };
 let shirtType = outfit.shirt.inside["color"];
 console.log(shirtType);
+
+//accessing nested arrays
+let myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "jasmine", "tulip"],
+  },
+
+  {
+    type: "trees",
+    list: ["guava", "banana", "neem"],
+  },
+];
+let bananaplant = myPlants[1].list[1];
+console.log(bananaplant);
