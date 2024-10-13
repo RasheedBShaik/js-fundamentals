@@ -763,3 +763,10 @@ for (k = 1; k < 10; k += 2) {
   OddNum.push(k);
 }
 console.log("odd numbers are" + " " + OddNum);
+
+// count backwards with a for loop
+let Array2 = [];
+for (j = 10; j > 0; j--) {
+  Array2.push(j);
+}
+console.log(Array2);
