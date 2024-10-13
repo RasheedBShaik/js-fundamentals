@@ -749,4 +749,17 @@ for (j = 0; j < 8; j++) {
   ourArray.push(j);
   console.log(ourArray);
 }
-// console.log(ourArray);
+
+// iterate even and odd numbers with for loop
+
+let EvenNum = [];
+
+for (k = 2; k < 10; k += 2) {
+  EvenNum.push(k);
+}
+console.log("Even numbers are" + " " + EvenNum);
+let OddNum = [];
+for (k = 1; k < 10; k += 2) {
+  OddNum.push(k);
+}
+console.log("odd numbers are" + " " + OddNum);
