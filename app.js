@@ -742,3 +742,11 @@ while (i < 5) {
   i++;
   console.log(myArray);
 }
+
+// iterate with for loop
+let ourArray = [];
+for (j = 0; j < 8; j++) {
+  ourArray.push(j);
+  console.log(ourArray);
+}
+// console.log(ourArray);
