@@ -702,3 +702,33 @@ function updateRecords(id, prop, val) {
 console.log(collectionCopy); //before update
 updateRecords(131415, "hero", "robert downey jr");
 console.log(updateRecords(789, "heroine", "kaa")); //after update
+
+// 2nd example for record collection
+
+let a = {
+  111: {
+    rr: "aa",
+    tt: "aaa",
+    add: "ll",
+  },
+  222: {
+    a1: 22,
+    a2: "fff",
+    a3: "adadad",
+    a4: "",
+  },
+};
+function updates(id, prop, val) {
+  if (val === "") {
+    delete a[id][prop];
+  } else if (prop === "") {
+    a[id][prop] = b[id][prop] || [];
+    b[id][prop].push(val);
+  } else {
+    a[id][prop] = val;
+  }
+  return a;
+}
+console.log(a);
+updates(222, "a2", "hiiiiiiiii");
+console.log(updates(111, "add", "aaaaaaaaaaaaaa"));
