@@ -732,3 +732,13 @@ function updates(id, prop, val) {
 console.log(a);
 updates(222, "a2", "hiiiiiiiii");
 console.log(updates(111, "add", "aaaaaaaaaaaaaa"));
+
+// iterate with while loop
+
+let myArray = [];
+let i = 0;
+while (i < 5) {
+  myArray.push(i);
+  i++;
+  console.log(myArray);
+}
