@@ -847,3 +847,9 @@ function LookUpProfile(name, prop) {
 }
 let data = LookUpProfile("Rasheed", "lastname");
 console.log(data);
+
+// Generate random fractions
+function randomfraction() {
+  return Math.random();
+}
+console.log(randomfraction());
