@@ -874,3 +874,9 @@ function convertToInteger(str) {
 }
 let nnn = convertToInteger("50");
 console.log(typeof nnn);
+
+// use the parseInt function with Radix
+function converttoInteger(str) {
+  return parseInt(str, 2); //use 2 to get binary value we can change base value to get other their values
+}
+console.log(converttoInteger("1111"));
