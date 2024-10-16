@@ -880,3 +880,9 @@ function converttoInteger(str) {
   return parseInt(str, 2); //use 2 to get binary value we can change base value to get other their values
 }
 console.log(converttoInteger("1111"));
+
+// use conditional (Ternary) operator
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+console.log(checkEqual(2, 2));
