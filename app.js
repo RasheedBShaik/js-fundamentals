@@ -866,3 +866,11 @@ function randomrange(min, max) {
 }
 let random = randomrange(1, 10); //generates value from 1 to 10
 console.log(random);
+
+// use the parseInt function
+
+function convertToInteger(str) {
+  return parseInt(str);
+}
+let nnn = convertToInteger("50");
+console.log(typeof nnn);
