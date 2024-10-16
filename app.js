@@ -771,10 +771,28 @@ for (j = 10; j > 0; j--) {
 }
 console.log(Array2);
 
-//
+// iterate through an array with a for loop
+
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let total = 0;
 for (i = 0; i < numbers.length; i++) {
   total += numbers[i];
 }
 console.log(total);
+// nesting for loops
+
+function multiplyAll(num) {
+  let product = 1;
+  for (i = 0; i < num.length; i++) {
+    for (j = 0; j < num[i].length; j++) {
+      product *= num[i][j];
+    }
+  }
+  return product;
+}
+let product = multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7],
+]);
+console.log(product);
