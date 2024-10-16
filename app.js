@@ -904,3 +904,20 @@ function editInPlace() {
 }
 editInPlace(s);
 console.log(s);
+
+// prevent Object mutation
+function freezeObj() {
+  "use strict";
+  const MATH_CONSTRAINTS = {
+    PI: 3.14,
+  };
+  // Object.freeze(PI); //[used to show error in output (uncomment this whole line to work this)]
+  try {
+    MATH_CONSTRAINTS.PI = 99;
+  } catch (ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTRAINTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);
