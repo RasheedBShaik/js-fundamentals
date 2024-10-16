@@ -858,4 +858,11 @@ console.log(randomfraction());
 function randomwholenum() {
   return Math.floor(Math.random() * 20);
 }
-console.log(randomwholenum()); // it generates a random number between 1 to 19
+console.log(randomwholenum()); // it generates a random number from 1 to 19
+
+//generate whole numbers whithin a range
+function randomrange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+let random = randomrange(1, 10); //generates value from 1 to 10
+console.log(random);
