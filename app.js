@@ -796,3 +796,14 @@ let product = multiplyAll([
   [5, 6, 7],
 ]);
 console.log(product);
+
+// iterate with do while loops
+
+let arr = [];
+let variable = 10;
+
+do {
+  arr.push(variable);
+  variable++;
+} while (variable < 15);
+console.log(arr, variable);
