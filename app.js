@@ -807,3 +807,43 @@ do {
   variable++;
 } while (variable < 15);
 console.log(arr, variable);
+
+// profile lookup
+
+let Contacts = [
+  {
+    firstname: "Rasheed",
+    lastname: "basha",
+    number: "1111111111",
+    likes: ["pubg", "money", "home", "games"],
+  },
+  {
+    firstname: "aaaaaaaaa",
+    lastname: "bbbbbbbb",
+    number: "2342521",
+    likes: ["ab", "bc", "cd", "de"],
+  },
+  {
+    firstname: "cccccc",
+    lastname: "dddddd",
+    number: "1234123412",
+    likes: ["eee", "fff", "ggg", "hhh"],
+  },
+  ,
+  {
+    firstname: "unkown",
+    lastname: "none",
+    number: "unknown",
+    likes: ["idk"],
+  },
+];
+function LookUpProfile(name, prop) {
+  for (i = 0; i < Contacts.length; i++) {
+    if (Contacts[i].firstname === name) {
+      return Contacts[i][prop] || "no such property";
+    }
+    return "no such contact";
+  }
+}
+let data = LookUpProfile("Rasheed", "lastname");
+console.log(data);
