@@ -886,3 +886,10 @@ function checkEqual(a, b) {
   return a === b ? true : false;
 }
 console.log(checkEqual(2, 2));
+
+// use multiple conditional (Ternary) operators
+
+function CheckSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+console.log(CheckSign(0));
