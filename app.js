@@ -853,3 +853,9 @@ function randomfraction() {
   return Math.random();
 }
 console.log(randomfraction());
+
+// Generate random whole numbers
+function randomwholenum() {
+  return Math.floor(Math.random() * 20);
+}
+console.log(randomwholenum()); // it generates a random number between 1 to 19
