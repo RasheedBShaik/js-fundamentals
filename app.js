@@ -893,3 +893,14 @@ function CheckSign(num) {
   return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
 }
 console.log(CheckSign(0));
+
+// mutate an array declared with const
+
+const s = [10, 11, 12];
+function editInPlace() {
+  s[0] = 1;
+  s[1] = 2;
+  s[2] = 3;
+}
+editInPlace(s);
+console.log(s);
