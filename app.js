@@ -926,3 +926,8 @@ console.log(PI);
 
 const magic = () => new Date();
 console.log(magic());
+
+//use arrow fuctions with parameters
+
+const myconcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myconcat([1, 2], [3, 4, 5]));
