@@ -981,3 +981,23 @@ let arr2;
   arr1[0] = `APPLE`;
 })();
 console.log(arr2);
+
+// use destructuring assignment to assign variables from objects
+
+var voxel = { m: 3.6, n: 7.4, o: 6.54 };
+let m = voxel.m;
+let n = voxel.n;
+let o = voxel.o;
+
+const { m: a1, n: a2, o: a3 } = voxel; //destructuring syntax
+// example
+const Avg_temp = {
+  today: 77.5,
+  tomorrow: 79,
+};
+function GetTempOfTomorrow(avgTemp) {
+  "use strict";
+  const { tomorrow: TempOfTomorrow } = avgTemp; //here we used destructuring suntax{}
+  return TempOfTomorrow;
+}
+console.log(GetTempOfTomorrow(Avg_temp));
