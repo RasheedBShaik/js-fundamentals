@@ -971,3 +971,13 @@ function Sum2(...args) {
   return args.reduce((a, b) => a + b, 0);
 }
 console.log(Sum2(1, 5, 1));
+
+// use the spread operator to evaluate arrays In-place
+
+const arr1 = [`JANUARY`, `FEBRUARY`, `MARCH`, `APRIL`, `MAY`];
+let arr2;
+(function () {
+  arr2 = [...arr1];
+  arr1[0] = `APPLE`;
+})();
+console.log(arr2);
