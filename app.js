@@ -955,3 +955,19 @@ const increment = (number, value = 1) => {
 };
 console.log(increment(1, 4));
 console.log(increment(3));
+
+// use the rest operator with function parameters
+
+//method 1
+const Sum = (function () {
+  return function Sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+console.log(Sum(1, 2, 3));
+
+// method 2
+function Sum2(...args) {
+  return args.reduce((a, b) => a + b, 0);
+}
+console.log(Sum2(1, 5, 1));
