@@ -1034,3 +1034,14 @@ console.log(GetMaxOfTomorrow(LOCAL_FORECAST));
   console.log(x);
   console.log(y);
 }
+// use destructuring assignment with rest operator
+{
+  let source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  function RemoveFirstTwoElements(list) {
+    const [, , ...arr] = list;
+    return arr;
+  }
+  const arr = RemoveFirstTwoElements(source);
+  console.log(arr);
+  console.log(source);
+}
