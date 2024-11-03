@@ -1019,3 +1019,18 @@ function GetMaxOfTomorrow(forecast) {
 }
 
 console.log(GetMaxOfTomorrow(LOCAL_FORECAST));
+
+// use destructuring assignment to assign variables from arrays
+{
+  const [a, b, , d, e] = [1, 2, 3, 4, 5, 6, 7, 8];
+  console.log(a, b, d, e);
+
+  let x = 8,
+    y = 6;
+  (() => {
+    "use strict";
+    [x, y] = [y, x];
+  })();
+  console.log(x);
+  console.log(y);
+}
