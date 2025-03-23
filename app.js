@@ -1058,3 +1058,14 @@ function fun0001(one, two, three) {
 let res = fun0001("rasheed", "car", "bike");
 
 console.log(res.name);
+
+//create strings using template literals
+
+function templateLiterals() {
+  const person = {
+    name: "rash",
+    age: 66,
+  };
+  console.log(`i am ${person.name} and my age is ${person.age}`);
+}
+templateLiterals();
