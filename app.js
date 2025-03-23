@@ -1045,3 +1045,16 @@ console.log(GetMaxOfTomorrow(LOCAL_FORECAST));
   console.log(arr);
   console.log(source);
 }
+
+//use destructuring assignment to pass an object as a function parameters
+
+function fun0001(one, two, three) {
+  return {
+    name: one,
+    two_wheeler: two,
+    four_wheeler: three,
+  };
+}
+let res = fun0001("rasheed", "car", "bike");
+
+console.log(res.name);
