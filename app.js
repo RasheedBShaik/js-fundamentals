@@ -1074,3 +1074,16 @@ templateLiterals();
 
 const createPerson = (name, age, gender) => ({ name, age, gender });
 console.log(createPerson(`Rasheed`, 20, `male`));
+
+// write concise declarative functions
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  },
+};
+
+bicycle.setGear(10);
+console.log(bicycle.gear);
