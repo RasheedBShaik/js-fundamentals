@@ -1087,3 +1087,16 @@ const bicycle = {
 
 bicycle.setGear(10);
 console.log(bicycle.gear);
+// use class syntax to define a constructor function
+
+function makeClass() {
+  class vegitable {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+  return vegitable;
+}
+const vegitable = makeClass();
+const carrot = new vegitable("carrot");
+console.log(carrot.name);
