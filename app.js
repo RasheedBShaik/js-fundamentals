@@ -1069,3 +1069,8 @@ function templateLiterals() {
   console.log(`i am ${person.name} and my age is ${person.age}`);
 }
 templateLiterals();
+
+// write concise object literal declarations using simple fields
+
+const createPerson = (name, age, gender) => ({ name, age, gender });
+console.log(createPerson(`Rasheed`, 20, `male`));
